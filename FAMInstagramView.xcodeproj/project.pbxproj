@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ADBBC6971CC25FEB00BD09E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6961CC25FEB00BD09E0 /* AppDelegate.swift */; };
+		ADBBC6991CC25FEB00BD09E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6981CC25FEB00BD09E0 /* ViewController.swift */; };
+		ADBBC69C1CC25FEB00BD09E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC69A1CC25FEB00BD09E0 /* Main.storyboard */; };
+		ADBBC69E1CC25FEB00BD09E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC69D1CC25FEB00BD09E0 /* Assets.xcassets */; };
+		ADBBC6A11CC25FEB00BD09E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC69F1CC25FEB00BD09E0 /* LaunchScreen.storyboard */; };
+		ADBBC6AC1CC25FEB00BD09E0 /* FAMInstagramViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6AB1CC25FEB00BD09E0 /* FAMInstagramViewTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADBBC6A81CC25FEB00BD09E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADBBC68B1CC25FEA00BD09E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADBBC6921CC25FEA00BD09E0;
+			remoteInfo = FAMInstagramView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ADBBC6931CC25FEA00BD09E0 /* FAMInstagramView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FAMInstagramView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBBC6961CC25FEB00BD09E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ADBBC6981CC25FEB00BD09E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADBBC69B1CC25FEB00BD09E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADBBC69D1CC25FEB00BD09E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADBBC6A01CC25FEB00BD09E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADBBC6A21CC25FEB00BD09E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBBC6A71CC25FEB00BD09E0 /* FAMInstagramViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAMInstagramViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBBC6AB1CC25FEB00BD09E0 /* FAMInstagramViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAMInstagramViewTests.swift; sourceTree = "<group>"; };
+		ADBBC6AD1CC25FEB00BD09E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADBBC6901CC25FEA00BD09E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBBC6A41CC25FEB00BD09E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ADBBC68A1CC25FEA00BD09E0 = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6951CC25FEA00BD09E0 /* FAMInstagramView */,
+				ADBBC6AA1CC25FEB00BD09E0 /* FAMInstagramViewTests */,
+				ADBBC6941CC25FEA00BD09E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ADBBC6941CC25FEA00BD09E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6931CC25FEA00BD09E0 /* FAMInstagramView.app */,
+				ADBBC6A71CC25FEB00BD09E0 /* FAMInstagramViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADBBC6951CC25FEA00BD09E0 /* FAMInstagramView */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6961CC25FEB00BD09E0 /* AppDelegate.swift */,
+				ADBBC6981CC25FEB00BD09E0 /* ViewController.swift */,
+				ADBBC69A1CC25FEB00BD09E0 /* Main.storyboard */,
+				ADBBC69D1CC25FEB00BD09E0 /* Assets.xcassets */,
+				ADBBC69F1CC25FEB00BD09E0 /* LaunchScreen.storyboard */,
+				ADBBC6A21CC25FEB00BD09E0 /* Info.plist */,
+			);
+			path = FAMInstagramView;
+			sourceTree = "<group>";
+		};
+		ADBBC6AA1CC25FEB00BD09E0 /* FAMInstagramViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADBBC6AB1CC25FEB00BD09E0 /* FAMInstagramViewTests.swift */,
+				ADBBC6AD1CC25FEB00BD09E0 /* Info.plist */,
+			);
+			path = FAMInstagramViewTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADBBC6921CC25FEA00BD09E0 /* FAMInstagramView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBBC6B01CC25FEB00BD09E0 /* Build configuration list for PBXNativeTarget "FAMInstagramView" */;
+			buildPhases = (
+				ADBBC68F1CC25FEA00BD09E0 /* Sources */,
+				ADBBC6901CC25FEA00BD09E0 /* Frameworks */,
+				ADBBC6911CC25FEA00BD09E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FAMInstagramView;
+			productName = FAMInstagramView;
+			productReference = ADBBC6931CC25FEA00BD09E0 /* FAMInstagramView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADBBC6A61CC25FEB00BD09E0 /* FAMInstagramViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADBBC6B31CC25FEB00BD09E0 /* Build configuration list for PBXNativeTarget "FAMInstagramViewTests" */;
+			buildPhases = (
+				ADBBC6A31CC25FEB00BD09E0 /* Sources */,
+				ADBBC6A41CC25FEB00BD09E0 /* Frameworks */,
+				ADBBC6A51CC25FEB00BD09E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADBBC6A91CC25FEB00BD09E0 /* PBXTargetDependency */,
+			);
+			name = FAMInstagramViewTests;
+			productName = FAMInstagramViewTests;
+			productReference = ADBBC6A71CC25FEB00BD09E0 /* FAMInstagramViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADBBC68B1CC25FEA00BD09E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = fromKK;
+				TargetAttributes = {
+					ADBBC6921CC25FEA00BD09E0 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					ADBBC6A61CC25FEB00BD09E0 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = ADBBC6921CC25FEA00BD09E0;
+					};
+				};
+			};
+			buildConfigurationList = ADBBC68E1CC25FEA00BD09E0 /* Build configuration list for PBXProject "FAMInstagramView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADBBC68A1CC25FEA00BD09E0;
+			productRefGroup = ADBBC6941CC25FEA00BD09E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADBBC6921CC25FEA00BD09E0 /* FAMInstagramView */,
+				ADBBC6A61CC25FEB00BD09E0 /* FAMInstagramViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADBBC6911CC25FEA00BD09E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBBC6A11CC25FEB00BD09E0 /* LaunchScreen.storyboard in Resources */,
+				ADBBC69E1CC25FEB00BD09E0 /* Assets.xcassets in Resources */,
+				ADBBC69C1CC25FEB00BD09E0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBBC6A51CC25FEB00BD09E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADBBC68F1CC25FEA00BD09E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBBC6991CC25FEB00BD09E0 /* ViewController.swift in Sources */,
+				ADBBC6971CC25FEB00BD09E0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADBBC6A31CC25FEB00BD09E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADBBC6AC1CC25FEB00BD09E0 /* FAMInstagramViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADBBC6A91CC25FEB00BD09E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADBBC6921CC25FEA00BD09E0 /* FAMInstagramView */;
+			targetProxy = ADBBC6A81CC25FEB00BD09E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADBBC69A1CC25FEB00BD09E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADBBC69B1CC25FEB00BD09E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADBBC69F1CC25FEB00BD09E0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADBBC6A01CC25FEB00BD09E0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADBBC6AE1CC25FEB00BD09E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADBBC6AF1CC25FEB00BD09E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADBBC6B11CC25FEB00BD09E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FAMInstagramView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FAMInstagramView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ADBBC6B21CC25FEB00BD09E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = FAMInstagramView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FAMInstagramView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		ADBBC6B41CC25FEB00BD09E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FAMInstagramViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FAMInstagramViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FAMInstagramView.app/FAMInstagramView";
+			};
+			name = Debug;
+		};
+		ADBBC6B51CC25FEB00BD09E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FAMInstagramViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FAMInstagramViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FAMInstagramView.app/FAMInstagramView";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADBBC68E1CC25FEA00BD09E0 /* Build configuration list for PBXProject "FAMInstagramView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBBC6AE1CC25FEB00BD09E0 /* Debug */,
+				ADBBC6AF1CC25FEB00BD09E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADBBC6B01CC25FEB00BD09E0 /* Build configuration list for PBXNativeTarget "FAMInstagramView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBBC6B11CC25FEB00BD09E0 /* Debug */,
+				ADBBC6B21CC25FEB00BD09E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		ADBBC6B31CC25FEB00BD09E0 /* Build configuration list for PBXNativeTarget "FAMInstagramViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADBBC6B41CC25FEB00BD09E0 /* Debug */,
+				ADBBC6B51CC25FEB00BD09E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADBBC68B1CC25FEA00BD09E0 /* Project object */;
+}
