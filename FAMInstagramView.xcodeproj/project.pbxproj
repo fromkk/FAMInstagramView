@@ -13,6 +13,10 @@
 		ADBBC69E1CC25FEB00BD09E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC69D1CC25FEB00BD09E0 /* Assets.xcassets */; };
 		ADBBC6A11CC25FEB00BD09E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADBBC69F1CC25FEB00BD09E0 /* LaunchScreen.storyboard */; };
 		ADBBC6AC1CC25FEB00BD09E0 /* FAMInstagramViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6AB1CC25FEB00BD09E0 /* FAMInstagramViewTests.swift */; };
+		ADBBC6B71CC26C0800BD09E0 /* FAMInstagram.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6B61CC26C0800BD09E0 /* FAMInstagram.swift */; };
+		ADBBC6B91CC278C300BD09E0 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6B81CC278C300BD09E0 /* DictionaryExtension.swift */; };
+		ADBBC6BB1CC286BA00BD09E0 /* FAMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6BA1CC286BA00BD09E0 /* FAMImageLoader.swift */; };
+		ADBBC6BD1CC28EF300BD09E0 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBBC6BC1CC28EF300BD09E0 /* StringExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,11 @@
 		ADBBC6A71CC25FEB00BD09E0 /* FAMInstagramViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FAMInstagramViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADBBC6AB1CC25FEB00BD09E0 /* FAMInstagramViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAMInstagramViewTests.swift; sourceTree = "<group>"; };
 		ADBBC6AD1CC25FEB00BD09E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADBBC6B61CC26C0800BD09E0 /* FAMInstagram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAMInstagram.swift; sourceTree = "<group>"; };
+		ADBBC6B81CC278C300BD09E0 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
+		ADBBC6BA1CC286BA00BD09E0 /* FAMImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAMImageLoader.swift; sourceTree = "<group>"; };
+		ADBBC6BC1CC28EF300BD09E0 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		ADBBC6BE1CC28FA700BD09E0 /* FAMInstagramView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FAMInstagramView-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,10 +88,15 @@
 			children = (
 				ADBBC6961CC25FEB00BD09E0 /* AppDelegate.swift */,
 				ADBBC6981CC25FEB00BD09E0 /* ViewController.swift */,
+				ADBBC6B81CC278C300BD09E0 /* DictionaryExtension.swift */,
 				ADBBC69A1CC25FEB00BD09E0 /* Main.storyboard */,
 				ADBBC69D1CC25FEB00BD09E0 /* Assets.xcassets */,
 				ADBBC69F1CC25FEB00BD09E0 /* LaunchScreen.storyboard */,
 				ADBBC6A21CC25FEB00BD09E0 /* Info.plist */,
+				ADBBC6B61CC26C0800BD09E0 /* FAMInstagram.swift */,
+				ADBBC6BA1CC286BA00BD09E0 /* FAMImageLoader.swift */,
+				ADBBC6BC1CC28EF300BD09E0 /* StringExtension.swift */,
+				ADBBC6BE1CC28FA700BD09E0 /* FAMInstagramView-Bridging-Header.h */,
 			);
 			path = FAMInstagramView;
 			sourceTree = "<group>";
@@ -198,7 +212,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBBC6991CC25FEB00BD09E0 /* ViewController.swift in Sources */,
+				ADBBC6B71CC26C0800BD09E0 /* FAMInstagram.swift in Sources */,
+				ADBBC6BD1CC28EF300BD09E0 /* StringExtension.swift in Sources */,
 				ADBBC6971CC25FEB00BD09E0 /* AppDelegate.swift in Sources */,
+				ADBBC6BB1CC286BA00BD09E0 /* FAMImageLoader.swift in Sources */,
+				ADBBC6B91CC278C300BD09E0 /* DictionaryExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +347,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FAMInstagramView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FAMInstagramView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FAMInstagramView/FAMInstagramView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -340,10 +361,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = FAMInstagramView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.fromkk.FAMInstagramView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FAMInstagramView/FAMInstagramView-Bridging-Header.h";
 			};
 			name = Release;
 		};
