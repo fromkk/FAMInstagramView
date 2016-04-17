@@ -169,6 +169,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewWillLayoutSubviews()
         
         self.collectionView.frame = self.view.bounds
+        
+        var contentInset :UIEdgeInsets = self.collectionView.contentInset
+        let side :CGFloat = (self.view.frame.size.width - 200.0) / 2.0
+        contentInset.left = side
+        contentInset.right = side
+        self.collectionView.contentInset = contentInset
     }
 
     override func didReceiveMemoryWarning() {
