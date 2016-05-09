@@ -145,22 +145,39 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        FAMInstagramApis.fetch(.userMediaRecent, userId: FAMInstagramConfiguration.UserId.rawValue) { (result, error) in
+
+//        FAMInstagramApis.mediasFromUserId(FAMInstagramConfiguration.UserId.rawValue) { (result, error) in
+//            guard let data :[Dictionary<String, AnyObject>] = result?["data"] as? [Dictionary<String, AnyObject>] else
+//            {
+//                print("failed")
+//                return
+//            }
+//
+//            self.items = data.map {
+//                FAMInstagramItem.itemFromDictionary($0)
+//            }
+//
+//            dispatch_async(dispatch_get_main_queue(), {
+//                self.collectionView.reloadData()
+//            })
+//        }
+
+        FAMInstagramApis.mediasFromTag(FAMInstagramConfiguration.Tag.rawValue) { (result, error) in
             guard let data :[Dictionary<String, AnyObject>] = result?["data"] as? [Dictionary<String, AnyObject>] else
             {
                 print("failed")
                 return
             }
-            
+
             self.items = data.map {
                 FAMInstagramItem.itemFromDictionary($0)
             }
-            
+
             dispatch_async(dispatch_get_main_queue(), {
                 self.collectionView.reloadData()
             })
         }
+
     
         // Do any additional setup after loading the view, typically from a nib.
     }

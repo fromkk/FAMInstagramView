@@ -147,6 +147,7 @@ public enum FAMInstagramConfiguration : String
 {
     case AccessToken = "2614388.a450b0b.db753a321ece424bb01c9466d3223c6c"
     case UserId = "1648170148"
+    case Tag    = "fammの無料フォトカレンダー"
 }
 
 public enum FAMInstagramApis : String
@@ -159,6 +160,7 @@ public enum FAMInstagramApis : String
     }
     
     case userMediaRecent = "/users/%@/media/recent"
+    case tagsMediaRecent = "/tags/%@/media/recent"
     
     private static func fetchUrl(urlString :String, completion :FAMInstagramCompletion)
     {
@@ -201,10 +203,25 @@ public enum FAMInstagramApis : String
         task.resume()
     }
     
-    public static func fetch(api :FAMInstagramApis, userId :String, completion :FAMInstagramCompletion)
+    public static func mediasFromUserId(userId :String, completion :FAMInstagramCompletion)
     {
         let endpoint :String = self.endpoint
-        let path :String = String(format: api.rawValue, userId)
+        let path :String = String(format: self.userMediaRecent.rawValue, userId)
+        let accessToken :String = FAMInstagramConfiguration.AccessToken.rawValue
+        let urlString :String = "\(endpoint)\(path)?access_token=\(accessToken)"
+        self.fetchUrl(urlString, completion: completion)
+    }
+
+    public static func mediasFromTag(tag :String, completion :FAMInstagramCompletion)
+    {
+        guard let escapedTag :String = tag.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLQueryAllowedCharacterSet()) else
+        {
+            completion(result: nil, error: nil)
+            return
+        }
+
+        let endpoint :String = self.endpoint
+        let path :String = String(format: self.tagsMediaRecent.rawValue, escapedTag)
         let accessToken :String = FAMInstagramConfiguration.AccessToken.rawValue
         let urlString :String = "\(endpoint)\(path)?access_token=\(accessToken)"
         self.fetchUrl(urlString, completion: completion)
